@@ -3,19 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson17", "Lesson17\Lesson17.csproj", "{159272AE-A12C-4BDC-BE48-4BF05BC70412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson17", "Lesson17\Lesson17.csproj", "{159272AE-A12C-4BDC-BE48-4BF05BC70412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{5B033F4E-4C40-4023-A18B-64DFEBA1A76A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{5B033F4E-4C40-4023-A18B-64DFEBA1A76A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson17Abstraction", "Lesson17Abstraction\Lesson17Abstraction.csproj", "{6D39974E-5F9A-437F-82AC-D709511D5922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson17Abstraction", "Lesson17Abstraction\Lesson17Abstraction.csproj", "{6D39974E-5F9A-437F-82AC-D709511D5922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson17Interfase", "Lesson17Interfase\Lesson17Interfase.csproj", "{060EF977-6B88-46E5-A5F0-D0447135C07E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson17Interfase", "Lesson17Interfase\Lesson17Interfase.csproj", "{060EF977-6B88-46E5-A5F0-D0447135C07E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson18", "Lesson18\Lesson18.csproj", "{BC1AC4C5-ED43-43D0-8715-5BAC50B3AB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson18", "Lesson18\Lesson18.csproj", "{BC1AC4C5-ED43-43D0-8715-5BAC50B3AB61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson18FullOop", "Lesson18FullOop\Lesson18FullOop.csproj", "{92913CA9-1109-4040-B502-C304E31CC390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson18FullOop", "Lesson18FullOop\Lesson18FullOop.csproj", "{92913CA9-1109-4040-B502-C304E31CC390}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson19Deligate", "Lesson19Deligate\Lesson19Deligate.csproj", "{5AF3DC3C-828E-40C9-A823-29AB07022B6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson19Deligate", "Lesson19Deligate\Lesson19Deligate.csproj", "{5AF3DC3C-828E-40C9-A823-29AB07022B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLesson19", "WpfLesson19\WpfLesson19.csproj", "{A70767D5-57F7-4F11-98F5-9F55AB15AB80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeligateHomework", "DeligateHomework\DeligateHomework.csproj", "{99DF6CFA-034E-4E73-A821-90392ADC3007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadFiles", "ReadFiles\ReadFiles.csproj", "{29EDA66E-4133-41AB-ADF9-8DB2E018BD9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{5AF3DC3C-828E-40C9-A823-29AB07022B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF3DC3C-828E-40C9-A823-29AB07022B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF3DC3C-828E-40C9-A823-29AB07022B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A70767D5-57F7-4F11-98F5-9F55AB15AB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A70767D5-57F7-4F11-98F5-9F55AB15AB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A70767D5-57F7-4F11-98F5-9F55AB15AB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A70767D5-57F7-4F11-98F5-9F55AB15AB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DF6CFA-034E-4E73-A821-90392ADC3007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DF6CFA-034E-4E73-A821-90392ADC3007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DF6CFA-034E-4E73-A821-90392ADC3007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DF6CFA-034E-4E73-A821-90392ADC3007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EDA66E-4133-41AB-ADF9-8DB2E018BD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EDA66E-4133-41AB-ADF9-8DB2E018BD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EDA66E-4133-41AB-ADF9-8DB2E018BD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EDA66E-4133-41AB-ADF9-8DB2E018BD9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

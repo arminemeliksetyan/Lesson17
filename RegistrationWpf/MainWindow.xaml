@@ -9,9 +9,19 @@
     <Grid>
         <Button Content="Continue" HorizontalAlignment="Left" Margin="350,322,0,0" VerticalAlignment="Top" Height="51" Width="117" Click="Button_Click" FontSize="18"/>
         <TextBox x:Name="login" HorizontalAlignment="Left" Margin="329,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="34"/>
-        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="329,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="35" TextChanged="password_TextChanged"/>
-        <Label Content="Registration" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="SimSun"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="329,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" Height="40" TextChanged="password_TextChanged" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.258"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Autorisation" HorizontalAlignment="Left" Margin="47,30,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="SimSun"/>
         <Label Content="User Name" HorizontalAlignment="Left" Margin="163,147,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="164,0,0,0" VerticalAlignment="Center" FontSize="18"/>
+        <TextBox x:Name="registration_link" HorizontalAlignment="Left" Margin="329,46,0,0" TextWrapping="Wrap" Text="registration link" VerticalAlignment="Top" Width="222" TextChanged="TextBox_TextChanged_1" FontSize="18"/>
     </Grid>
 </Window>

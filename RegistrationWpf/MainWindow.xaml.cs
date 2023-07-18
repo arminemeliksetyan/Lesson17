@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RegistrationWpf
 {
@@ -35,21 +23,36 @@ namespace RegistrationWpf
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var loginUser = login.Text.Trim();
-            var passwordUser = password.Text.Trim();
-
+            var loginUser = login.Text;
+            var passwordUser = password.Text;
+            dataBase.OpenConnection();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
-
-            string queryString = $"select id, login_user, password_user from first_db login_user = '{loginUser}' and password_user = '{passwordUser}'";
-            SqlCommand command = new SqlCommand(queryString, dataBase.GetConnection());
+            string queryString = $"select id, login, password from first_db where login = '{loginUser}' and password = '{passwordUser}'";            
+            SqlCommand command = new SqlCommand(queryString, dataBase.GetConnection());            
             adapter.SelectCommand = command;
             adapter.Fill(dataTable);
 
             if(dataTable.Rows.Count == 1)
             {
                 MessageBox.Show("Sucsess", " wow", MessageBoxButton.OK);
+                Window1 window1 = new Window1();
+                this.Hide();
+                window1.ShowDialog();
+                this.Show();
             }
+            else
+            {
+                MessageBox.Show("Return", " ups", MessageBoxButton.OK);
+            }
+            dataBase.CloseConnection();
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            Sign_up sign_Up = new Sign_up();
+            sign_Up.Show();
+            this.Hide();
         }
     }
 }

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 
 namespace RegistrationWpf
 {
     internal class DataBase
-    {
-        SqlConnection sqlConnection = new SqlConnection(@"Server=DESKTOP-QCOA7R0\SQLEXPRESS;Database=first_db;Trusted_Connection=True;");
+    {        
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=fitst_db;Integrated Security=True");
         public void OpenConnection() 
         { 
             if(sqlConnection.State == System.Data.ConnectionState.Closed)

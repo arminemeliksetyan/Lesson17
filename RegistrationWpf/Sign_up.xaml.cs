@@ -14,6 +14,7 @@ namespace RegistrationWpf
         public Sign_up()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
 
         DataBase dataBase = new DataBase();

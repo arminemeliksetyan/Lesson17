@@ -11,9 +11,11 @@ namespace RegistrationWpf
     public partial class MainWindow : Window
     {
         DataBase dataBase = new DataBase();
+
         public MainWindow()
         {
             InitializeComponent();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
 
         private void password_TextChanged(object sender, TextChangedEventArgs e)

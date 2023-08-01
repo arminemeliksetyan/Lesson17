@@ -4,18 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Console.WriteLine("Hello, World!");
 
-            List list = new List();
-            list.LinkedList();
+            //List list = new List();
+            //list.LinkedList();
             
-            list.Queue();
+            //list.Queue();
 
-            list.Stack();
+            //list.Stack();
 
-            list.Dictionary();
+            //list.Dictionary();
 
-            list.HashSet();
+            //list.HashSet();
+
+            Dictionary dictionary = new Dictionary();
+            //dictionary.State();
+            dictionary.ListMax();
+            dictionary.StackMax();
         }
     }
 }
